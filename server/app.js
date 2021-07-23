@@ -17,8 +17,8 @@ app.use(passport.initialize());
 
 passport.use(new facebookStrategy({
 
-    clientID: '4142008792560501',
-    clientSecret: '05bd70a856c0f7fee42fd3beefeb98f7',
+    clientID: 'ClientId',
+    clientSecret: 'ClientSecret',
     callbackURL: 'http://localhost:5000/facebook/callback',
     profileFields: ['id', 'displayName', 'name', 'gender', 'picture.type(large)','email']
 
